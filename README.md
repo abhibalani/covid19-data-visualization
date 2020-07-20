@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 For data visualization, the library used is [Kepler.gl](https://kepler.gl).
 
+Article about kepler.gl implementation: [Kepler.gl Data Visualization with React.js](https://oddblogger.com/integrating-kepler-gl-in-react-js/)
+
 ## Live Demo
 [Covid19 Data Visualization](https://covid19.oddblogger.com)
 

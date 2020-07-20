@@ -47,10 +47,10 @@ class InfoModal extends Component {
 
                         <h5>Github Link</h5>
                         <p style={{ fontSize: 14 }}>
-                            Coming Soon
+                            <a href="https://github.com/abhibalani/covid19-data-visualization" target="_blank" rel="noopener noreferrer">
+                                Covid19 Data Visualization
+                            </a>
                         </p>
-
-
 
                         <h5>Contact</h5>
                         <p style={{ fontSize: 14 }}>
