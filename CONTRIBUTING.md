@@ -1,4 +1,4 @@
-# Contributing to react-covid19-keplergl
+# Contributing to Covid19 Data Visualization
 
 I want to make contributing to this project as easy and transparent as possible, whether it's:
 
