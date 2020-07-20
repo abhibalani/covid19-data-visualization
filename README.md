@@ -14,6 +14,9 @@ For data visualization, the library used is [Kepler.gl](https://kepler.gl).
 - Add functionality to change map style
 - more ...
 
+## Contribution
+[Contribution](./CONTRIBUTING.md)
+
 ### Available Scripts
 
 In the project directory, you can run:

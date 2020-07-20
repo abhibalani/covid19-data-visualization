@@ -30,7 +30,7 @@ class Header
                         height="30"
                         className="d-inline-block align-top"
                     />{' '}
-                    Covid19 India <img width={30} alt="India Flag" src="https://disease.sh/assets/img/flags/in.png"></img>
+                    Covid19 Data Visualization <img width={30} alt="India Flag" src="https://disease.sh/assets/img/flags/in.png"></img>
                 </Navbar.Brand>
                 <Navbar.Collapse className={"justify-content-end"}>
                     <InfoModal />
