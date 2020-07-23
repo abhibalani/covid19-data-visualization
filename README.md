@@ -11,6 +11,9 @@ Article about kepler.gl implementation: [Kepler.gl Data Visualization with React
 ## Live Demo
 [Covid19 Data Visualization](https://covid19.oddblogger.com)
 
+## Dataset
+The data which is plotted on the map is live data coming from covid19india.org. There is a python script which runs every 1 hour to fetch the latest data, add geocoordinates and format the data in a form which kepler.gl accepts.
+
 ## Roadmap
 
 - Add covid19 data for rest of the world
