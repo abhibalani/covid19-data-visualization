@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
 import axios from "axios";
 import StateCard from './StateCard'
+// import StateCard from './StateCard'
+import CountUp from 'react-countup';
 
-class CovidData extends Component {
+class CovidDataSlim extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -48,51 +50,49 @@ class CovidData extends Component {
 
     render() {
         return (
-            <React.Fragment>
-                <Container fluid className={"covid-data "}>
-                    <Row>
-                        <Col xs={6} lg={{ span: 2, offset: 2 }}>
-                            <StateCard
-                                cardName={"Confirmed"}
-                                data={this.state.confirmed}
-                                dataToday={this.state.confirmedToday}
-                                variant={"danger"}
-                            />
-                        </Col>
-                        <Col xs={6} lg={2}>
-                            <StateCard
-                                cardName={"Active"}
-                                data={this.state.active}
-                                dataToday={"-1"}
-                                variant={"primary"}
-                            />
-                        </Col>
-                        <Col xs={6} lg={2}>
-                            <StateCard
-                                cardName={"Recovered"}
-                                data={this.state.recovered}
-                                dataToday={this.state.recoveredToday}
-                                variant={"success"}
-                            />
-                        </Col>
-                        <Col xs={6} lg={2}>
-                            <StateCard
-                                cardName={"Deceased"}
-                                data={this.state.deceased}
-                                dataToday={this.state.deceasedToday}
-                                variant={"secondary"}
-                            />
-                        </Col>
-                    </Row>
-                    <Row >
+            <Container fluid className={"covid-data-slim"} >
+                <Row>
+                    <Col xs={6} lg>
+                        <StateCard
+                            cardName={"Confirmed"}
+                            data={this.state.confirmed}
+                            dataToday={this.state.confirmedToday}
+                            variant={"danger"} />
+                    </Col>
+                    <Col xs={6}>
+                        <StateCard
+                            cardName={"Active"}
+                            data={this.state.active}
+                            dataToday={"-1"}
+                            variant={"primary"}
+                        />
+                    </Col>
+                    <Col xs={6}>
+                        <StateCard
+                            cardName={"Recovered"}
+                            data={this.state.recovered}
+                            dataToday={this.state.recoveredToday}
+                            variant={"success"}
+                        />
+                    </Col>
+                    <Col xs={6}>
+                        <StateCard
+                            cardName={"Deceased"}
+                            data={this.state.deceased}
+                            dataToday={this.state.deceasedToday}
+                            variant={"secondary"}
+                        />
+                    </Col>
+                </Row>
+                {/* <Row >
                         <Col className={"text-center mt-2"} style={{ fontSize: 12 }} >
                             <p className={"text-light"}>Last Updated: {this.state.updatedAt}</p>
-                            {/* <p className={"text-light"}>Data till yesterday</p> */}
+                            <p className={"text-light"}>Data till yesterday</p>
                         </Col>
 
-                    </Row>
-                </Container>
-            </React.Fragment >
+                    </Row> */}
+
+            </Container>
         );
     }
 }
@@ -121,4 +121,4 @@ Date.prototype.format = function (format) {
     return format;
 }
 
-export default CovidData;
+export default CovidDataSlim;

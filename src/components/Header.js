@@ -1,8 +1,9 @@
 
 import React, { Component } from "react";
 
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import InfoModal from "./InfoModal";
+import CovidDataSlim from "./CovidDataSlim";
 
 
 class Header
@@ -21,18 +22,23 @@ class Header
     }
     render() {
         return (
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
                 <Navbar.Brand href="#home" className={"text-center"}>
-                    <img
+                    {/* <img
                         alt=""
                         src="/logo.svg"
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
-                    />{' '}
-                    Covid19 Data Visualization <img width={30} alt="India Flag" src="https://disease.sh/assets/img/flags/in.png"></img>
+                    />{' '} */}
+                    Covid19 Data Visualization
+                    {/* <img width={30} alt="India Flag" src="https://disease.sh/assets/img/flags/in.png"></img> */}
                 </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className={"justify-content-end"}>
+                    <Nav>
+                        <CovidDataSlim />
+                    </Nav>
                     <InfoModal />
                 </Navbar.Collapse>
             </Navbar>

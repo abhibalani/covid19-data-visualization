@@ -6,16 +6,18 @@ import { Container } from "react-bootstrap";
 import CovidData from "./CovidData";
 import Kepler from "./Kepler";
 import { pointLayerConfig } from "../keplerConfigs/pointLayerConfig";
+import { pointLayerConfig2 } from "../keplerConfigs/pointLayerConfig2";
 import { mapStyleConfig } from "../keplerConfigs/mapStyleConfig";
 import { interactionConfig } from "../keplerConfigs/interactionConfig";
 import { clusterLayerConfig } from "../keplerConfigs/clusterLayerConfig";
+import { heatMapLayerConfig } from "../keplerConfigs/heapMapLayerConfig";
 
 
 class Home extends Component {
     constructor(props) {
         super(props);
 
-        let layerConfigList = [pointLayerConfig, clusterLayerConfig]
+        let layerConfigList = [pointLayerConfig, clusterLayerConfig, heatMapLayerConfig]
         let mapStyle = mapStyleConfig;
         let interactionConf = interactionConfig;
 
@@ -82,9 +84,7 @@ class Home extends Component {
             .catch((error) => {
                 console.error("Unabled to fetch json")
             })
-
     }
-
 
     getCovidData = () => {
         // Unused

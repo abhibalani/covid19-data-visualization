@@ -31,9 +31,8 @@ class InfoModal extends Component {
                     </Modal.Header>
                     <Modal.Body className={"text-center"}>
                         <a href="https://oddblogger.com" target="_blank" rel="noopener noreferrer">
-                            <Image width={120} src={"https://oddblogger.com/wp-content/uploads/2017/01/OB-Shield-1.png"} />
+                            <img width="40%" src={"https://oddblogger.com/wp-content/uploads/2020/07/OB-Shield-small.png"} />
                         </a>
-                        <br />
                         <br />
                         <p style={{ fontSize: 14 }}>
                             <a href="https://oddblogger.com/integrating-kepler-gl-in-react-js/" target="_blank" rel="noopener noreferrer">

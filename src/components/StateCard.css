@@ -1,0 +1,79 @@
+
+@media screen and (min-width: 601px) {
+    .covid-data-slim{
+        display: none !important;
+    }
+    .covid-data{
+        display: block;
+    }
+
+    .state-card {
+        text-align: center!important;
+    }
+
+    .state-card-body {
+        padding: 0.5em;
+    }
+    
+    .state-card-title {
+        font-size: 0.9em;
+        /* margin-bottom: 0.4em; */
+    }
+
+    .state-card-count h3{
+        font-size: 1.5em;
+        /* margin-bottom: 0em; */
+    }
+    
+    .state-card-badge{
+        font-size: 0.8em;
+        /* margin-bottom: 0em; */
+    }
+    
+  }
+
+  
+@media screen and (max-width: 600px) {
+    
+    .covid-data-slim{
+        /* visibility: visible; */
+        display: block !important;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .covid-data{
+        display: none;
+    }
+    
+    .state-card {
+        text-align: center!important;
+    }
+
+    .state-card-body {
+        padding: 0.2em;
+    }
+
+    .state-card-title {
+        font-size: 0.8em;
+        margin-bottom: 0.4em;
+    }
+    .state-card-title p{
+        font-size: 0.8em;
+        margin-bottom: 0;
+    }
+
+    .state-card-count h3{
+        font-size: 1em;
+        margin-bottom: 0em;
+    }
+    
+    .state-card-badge{
+        font-size: 0.6em;
+        margin-bottom: 0em;
+    }
+    
+  }
+  

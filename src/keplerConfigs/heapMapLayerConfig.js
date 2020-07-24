@@ -1,13 +1,13 @@
-export const clusterLayerConfig = {
-    "id": "l2vlgiq",
-    "type": "cluster",
+export const heatMapLayerConfig = {
+    "id": "78jbw4c",
+    "type": "heatmap",
     "config": {
         "dataId": "covid_19_data",
-        "label": "Covid19",
+        "label": "new layer",
         "color": [
-            23,
-            184,
-            190
+            218,
+            112,
+            191
         ],
         "columns": {
             "lat": "lat",
@@ -15,27 +15,21 @@ export const clusterLayerConfig = {
         },
         "isVisible": false,
         "visConfig": {
-            "opacity": 0.39,
-            "clusterRadius": 30.2,
+            "opacity": 0.8,
             "colorRange": {
                 "name": "Global Warming",
                 "type": "sequential",
                 "category": "Uber",
                 "colors": [
-                    "#FFC300",
-                    "#F1920E",
-                    "#E3611C",
-                    "#C70039",
+                    "#5A1846",
                     "#900C3F",
-                    "#5A1846"
-                ],
-                "reversed": true
+                    "#C70039",
+                    "#E3611C",
+                    "#F1920E",
+                    "#FFC300"
+                ]
             },
-            "radiusRange": [
-                4.2,
-                49.4
-            ],
-            "colorAggregation": "sum"
+            "radius": 62.3
         },
         "hidden": false,
         "textLabel": [
@@ -57,10 +51,7 @@ export const clusterLayerConfig = {
         ]
     },
     "visualChannels": {
-        "colorField": {
-            "name": "confirmed",
-            "type": "integer"
-        },
-        "colorScale": "quantile"
+        "weightField": null,
+        "weightScale": "linear"
     }
 }
