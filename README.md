@@ -1,5 +1,7 @@
 ## Covid19 Data Visualization
 
+<img src="https://i0.wp.com/oddblogger.com/wp-content/uploads/2020/07/covid19-india-tracker.png?w=600&ssl=1" alt="covid19-india-tracker"/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 For data visualization, the library used is [Kepler.gl](https://kepler.gl).
@@ -8,6 +10,9 @@ Article about kepler.gl implementation: [Kepler.gl Data Visualization with React
 
 ## Live Demo
 [Covid19 Data Visualization](https://covid19.oddblogger.com)
+
+## Dataset
+The data which is plotted on the map is live data coming from covid19india.org. There is a python script which runs every 1 hour to fetch the latest data, add geocoordinates and format the data in a form which kepler.gl accepts.
 
 ## Roadmap
 
