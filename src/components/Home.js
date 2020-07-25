@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Component } from "react";
 import { connect } from 'react-redux';
 import { addDataToMap } from 'kepler.gl/actions';
-import { Container } from "react-bootstrap";
+import { Container, Spinner } from "react-bootstrap";
 import CovidData from "./CovidData";
 import Kepler from "./Kepler";
 import { pointLayerConfig } from "../keplerConfigs/pointLayerConfig";
@@ -40,7 +40,8 @@ class Home extends Component {
             covidData: 0,
             layerConfigList: layerConfigList,
             mapStyle: mapStyle,
-            interactionConf: interactionConf
+            interactionConf: interactionConf,
+            isLoading: true
         }
 
     }
@@ -77,7 +78,8 @@ class Home extends Component {
             .then(response => response.json())
             .then((jsonData) => {
                 this.setState({
-                    covidData: jsonData
+                    covidData: jsonData,
+                    isLoading: false
                 });
                 this.loadDataOnMap(jsonData);
             })
@@ -97,9 +99,10 @@ class Home extends Component {
         return (
             <Container fluid className="p-0 bg-dark" >
                 <CovidData />
-                <Kepler />
+                <Kepler isLoading={this.state.isLoading} />
             </Container >
-        )
+
+        );
     }
 
 }
