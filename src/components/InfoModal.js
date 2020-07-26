@@ -32,6 +32,7 @@ class InfoModal extends Component {
                     <Modal.Body className={"text-center"}>
                         <a href="https://oddblogger.com" target="_blank" rel="noopener noreferrer">
                             <img width="40%" src={"https://oddblogger.com/wp-content/uploads/2020/07/OB-Shield-small.png"} />
+
                         </a>
                         <br />
                         <p style={{ fontSize: 14 }}>
